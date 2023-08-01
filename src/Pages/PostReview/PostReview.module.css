@@ -1,0 +1,52 @@
+.postReview {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    background-image: url("D:\BackEnd\OwnReview\clients\public\assets\responsive.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.left {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       background-color: rgba(208, 208, 208, 0.2); /* White with low opacity */
+    backdrop-filter: blur(5px);
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    width: 400px;
+}
+.box_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+}
+.input {
+    width: 100%;
+}
+.box button {
+    width: 50%;
+}
+
+.right {
+       height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img {
+width: 100%;
+}

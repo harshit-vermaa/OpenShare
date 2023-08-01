@@ -1,0 +1,112 @@
+.registration {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.right {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  width: 400px;
+}
+.box button {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.box button:hover {
+  border-color: var(--primary-one);
+  color: var(--primary-color);
+}
+.box_inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+}
+.input {
+  width: 100%;
+}
+.box button {
+  width: 50%;
+}
+.boxHeading h2 {
+  display: none;
+}
+
+.left {
+  height: 100%;
+  width: 65%;
+  background-image: url("D:\BackEnd\OwnReview\clients\public\assets\Signin.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.left h2 {
+  color: var(--bg-one);
+  text-decoration: underline;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+.left h1 {
+  color: var(--bg-color);
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .registration h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .left {
+    display: none;
+  }
+  .registration {
+    background-image: url("D:\BackEnd\OwnReview\clients\public\assets\responsive.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .right {
+    width: 100% !important;
+    background-color: rgba(208, 208, 208, 0.2); /* White with low opacity */
+    backdrop-filter: blur(5px);
+  }
+  .boxHeading h2 {
+    font-size: 20px;
+    display: block;
+    color: var(--primary-one);
+    text-decoration: underline;
+  }
+  .boxHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+  }
+}
