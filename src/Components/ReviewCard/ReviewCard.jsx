@@ -12,7 +12,7 @@ const ReviewCard = ({ title, description, token, deletePost, cardData, postId, i
         const postIdToDelete = postId;
         const authToken = token; // Replace with your actual authorization token
         window.location.reload();
-        const res = await fetch(`${PORT}/delete-post/${postIdToDelete}`, {
+        const res = await fetch(`https://openshare-server.onrender.com/delete-post/${postIdToDelete}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json', // Specify the content type for the request

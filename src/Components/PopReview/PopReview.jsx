@@ -27,7 +27,7 @@ const CustomizedDialogs = () => {
 
     const userAuth = async () => {
         try {
-            const res = await fetch(`${PORT}/auth`, {
+            const res = await fetch(`https://openshare-server.onrender.com/auth`, {
                 method: 'GET',
                 credentials: 'include',
             });
@@ -36,7 +36,7 @@ const CustomizedDialogs = () => {
                 const data = await res.json();
                 setUser(data.user);
             } else {
-                navigation(`${PORT}/login`);
+                navigation(`https://openshare-server.onrender.com/login`);
             }
         } catch (error) {
             console.error('Error during user authentication:', error);
@@ -72,7 +72,7 @@ const CustomizedDialogs = () => {
 // console.log(formData)
 
         try {
-            const res = await fetch(`${PORT}/create-post`, {
+            const res = await fetch(`https://openshare-server.onrender.com/create-post`, {
                 method: 'POST',
                 body: formData,
             });

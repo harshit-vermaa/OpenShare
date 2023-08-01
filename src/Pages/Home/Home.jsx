@@ -9,7 +9,7 @@ const Home = () => {
   const [user, setUser] = useState([])
 
   const FetchAll = async () => {
-    const res = await fetch(`${PORT}/home`, {
+    const res = await fetch(`https://openshare-server.onrender.com/home`, {
       method: "GET",
       headers: {
         Accept: "app/json",

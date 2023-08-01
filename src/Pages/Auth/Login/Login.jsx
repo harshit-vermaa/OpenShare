@@ -30,7 +30,7 @@ const PORT = process.env.PORT
     const { email, password } = user;
 
     try {
-      const res = await fetch(`${PORT}/login`, {
+      const res = await fetch(`https://openshare-server.onrender.com/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

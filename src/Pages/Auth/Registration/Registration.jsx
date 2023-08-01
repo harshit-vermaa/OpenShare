@@ -38,7 +38,7 @@ const Registration = () => {
       formData.append('bio', bio)
       formData.append('image', file)
 console.log(formData)
-      const res = await fetch(`${PORT}/registration`, {
+      const res = await fetch(`https://openshare-server.onrender.com/registration`, {
         method: 'POST',
         // headers: {
         //   'Content-Type': 'application/json',

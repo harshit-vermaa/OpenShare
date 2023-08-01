@@ -17,7 +17,7 @@ const Profile = () => {
 
   const userAuth = async () => {
 
-    const res = await fetch(`${PORT}/auth`, {
+    const res = await fetch(`https://openshare-server.onrender.com/auth`, {
       method: "GET",
       headers: {
         Accept: "app/json",

@@ -6,11 +6,9 @@ import Profile from "./Pages/Profile/Profile"
 import PostReview from "./Pages/PostReview/PostReview"
 import Login from './Pages/Auth/Login/Login'
 import Registration from './Pages/Auth/Registration/Registration'
-import dotenv from "dotenv"
 
 const App = () => {
 
-  dotenv.config({ path: './config.env' })
 
   return (
     <>
