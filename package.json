@@ -1,6 +1,7 @@
 {
   "name": "clients",
   "proxy": "https://openshare-server.onrender.com/",
+  "homepage": "https://harshit-vermaa.github.io/OpenShare",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,18 +18,21 @@
     "dom": "^0.0.3",
     "dotenv": "^16.3.1",
     "draftjs-to-html": "^0.9.1",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-draft-wysiwyg": "^1.15.0",
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.14.2",
-    "react-scripts": "^2.1.3",
+    "react-scripts": "^5.0.1",
     "redux": "^4.2.1",
     "router": "^1.3.8",
     "styled-components": "^5.3.11",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -53,6 +57,9 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-runtime": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5"
   }
 }
